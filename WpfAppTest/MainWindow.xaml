@@ -54,8 +54,8 @@
                     </RadioButton>
                 </StackPanel>
             </GroupBox>
-            <Button Style="{StaticResource MyStyleStckPanel}" Click="Button_Click">New Game</Button>
-            <Button Style="{StaticResource MyStyleStckPanel}" Click="Button_Click">New Game</Button>
+            <Button Style="{StaticResource MyStyleStckPanel}" Click="Button_Click">Start Game</Button>
+            <Button Style="{StaticResource MyStyleStckPanel}" Click="Button_Click">Stop Game</Button>
             <Expander Header="Server creation">
                 <StackPanel>
                     <Label> Status Server</Label>
@@ -63,7 +63,7 @@
                         <TextBox.ToolTip>Server port, default value 11000</TextBox.ToolTip>
                         11000
                     </TextBox>
-                    <Button Style="{StaticResource MyStyleStckPanel}">Star Server</Button>
+                    <Button Style="{StaticResource MyStyleStckPanel}" Click="Button_Click_Start">Star Server</Button>
                     <Button Style="{StaticResource MyStyleStckPanel}">Stop Server</Button>
                 </StackPanel>
             </Expander>

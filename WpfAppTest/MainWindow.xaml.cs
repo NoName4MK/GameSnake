@@ -97,5 +97,9 @@ namespace WpfAppTest
 
         }
 
+        private void Button_Click_Start(object sender, RoutedEventArgs e)
+        {
+            Game.StartServer();
+        }
     }
 }

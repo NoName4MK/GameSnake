@@ -43,6 +43,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ClassLibrarySocketClietn\ClassLibrarySocketClietn\bin\Debug\ClassLibrarySocketClietn.dll</HintPath>
     </Reference>
+    <Reference Include="ClassLibrarySocketServerForGameSnake">
+      <HintPath>..\..\ClassLibrarySocketServerForGameSnake\ClassLibrarySocketServerForGameSnake\bin\Debug\ClassLibrarySocketServerForGameSnake.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />

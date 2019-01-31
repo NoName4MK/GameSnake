@@ -2,17 +2,13 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Shapes;
 using ClassLibrarySnakeFram;
 using ClassLibrarySocketClietn;
-using WpfAppTest;
+using ClassLibrarySocketServerForGameSnake;
 
 
 namespace WpfAppTest.Models
@@ -56,7 +52,6 @@ namespace WpfAppTest.Models
           
         }
 
-
         public Game()
         {
             
@@ -65,6 +60,12 @@ namespace WpfAppTest.Models
             walls = new Walls(50, 50);
             player = new Player(0, snake.pList);
             Client();
+        }
+
+        public static async void StartServer()
+        {
+            ServerAsync serverAsync = new ServerAsync();
+            await Task.Run(() => serverAsync.StartListening());
         }
 
         private async void Client()
